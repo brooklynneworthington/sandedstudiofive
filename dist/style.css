@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  background: #E7E7E7;
+  background: #ececec;
   display: grid;
   grid: "nav nav nav nav" "img1 img1 img1 block1" "block2 block2 block2 block2" "img2 img2 img2 img2" / 60px 1fr 100px 1fr;
   grid-template-rows: [g-top] 60px [nav-e g-b1s] auto [g-b1e g-b2s] auto [g-b2e g-img2] 20vh [g-bot];
