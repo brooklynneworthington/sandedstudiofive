@@ -91,11 +91,17 @@ svg {
   transition: 0.5s transform cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: 0.5s transform cubic-bezier(0.39, 0.575, 0.565, 1), 0.5s -webkit-transform cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
 @media (max-width: 700px) {
   .header {
     grid-template: repeat(3, [row-start] 1fr)/repeat(6, [col-start] 1fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 }
+
 .header[data-menustate="open"] {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -241,12 +247,34 @@ svg {
           animation: background-swipe-out 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 2.1s 1;
 }
 .grid-item--primary {
-  grid-area: span 3 / span 6;
+  grid-area: span 3 / span 5;
   display: grid;
   -webkit-box-align: center;
           align-items: center;
   justify-items: start;
 }
+.grid-item--text {
+ grid-column-start: 6;
+ grid-column-end: 10;
+ grid-row-start: 1;
+ grid-row-end: 3;
+  display: grid;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-items: start;
+}
+
+.grid-item--img {
+ grid-column-start: 7;
+ grid-column-end: 9;
+ grid-row-start: 3;
+ grid-row-end: 5;
+  display: grid;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-items: start;
+}
+
 .grid-item--primary > img,
 .grid-item--primary > .logo {
   grid-area: 1 / 1 / -1 / -1;
@@ -258,7 +286,10 @@ svg {
 }
 .grid-item--tertiary {
   background: #898979;
-  grid-area: span 1 / span 2;
+ grid-column-start: 10;
+ grid-column-end: 13;
+ grid-row-start: 3;
+ grid-row-end: 5;
   -webkit-animation-duration: 1.8s;
           animation-duration: 1.8s;
 }
