@@ -923,10 +923,11 @@ body {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-3.jpg");
+  background-image: url("./images/productbg1.png");
+  background-size: cover;
 }
 .slide:nth-child(1) .slide__overlay-path {
-  fill: #e99c7e;
+  fill: #A46D38;
 }
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
@@ -1097,4 +1098,3 @@ body {
 }
 .slide__text-link:hover:before {
   -webkit-transform: rotateX(0);
-   
