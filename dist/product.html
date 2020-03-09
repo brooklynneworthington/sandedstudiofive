@@ -6,74 +6,206 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=PT+Serif:700|Roboto" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-<link rel="stylesheet" href="./homestyle.css">
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
+<!-- NAVIGATION -->
+
 <button class="nav-toggle" data-menustate="closed">
-	<svg class="icon icon--menu" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0 0h24v24H0z" fill="none"/>
-		<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-	</svg>
-	<svg class="icon icon--close" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-		<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-		<path d="M0 0h24v24H0z" fill="none"/>
-	</svg>
+<svg class="icon icon--menu" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+<svg class="icon icon--close" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+  <path d="M0 0h24v24H0z" fill="none"/>
+    </svg>
 </button>
 <nav class="nav" data-state="closed">
-	<a href="#" style="--delay: .35s">About</a>
-	<a href="#" style="--delay: .4s">Studio</a>
-	<a href="#" style="--delay: .45s">Products</a>
-	<a href="#" style="--delay: .5s">Contact</a>
+  <a href="index.html" style="--delay: .35s">Home</a>
+  <a href="about.html" style="--delay: .4s">About</a>
+  <a href="product.html" style="--delay: .45s">Products</a>
+  <a href="cart.html" style="--delay: .5s">Cart</a>
 </nav>
 
+<!-- INTRO -->
 
-<!-- SHIT GOES HERE -->
 
-  <div class="product">
+<div class="slider-container">
+<div class="slider-control left inactive"></div>
+<div class="slider-control right"></div>
+<ul class="slider-pagi"></ul>
+<div class="slider">
+ <div class="slide slide-0 active">
+<div class="slide__bg"></div>
+<div class="slide__content">
+<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+  <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+</svg>
+<div class="slide__text">
+
+<div class="product">
     <div class="product-photo">
-      <img src="images/productbg1.png" class="object-fit" alt="chair">
-      <img src="https://preview.ibb.co/fmOB2R/photo_1504051898397_67f872da760b.jpg">
+      <img src="./images/productchair1.png">
+      <img src="./images/productbench1.png">
     </div>
-    <div class="product-detail">
-      <h1 class="product__title">Textured Biker Jacket</h1>
-      <div class="product__price">$79.99</div>
-      <div class="product__subtitle">Biker jacket with lapel collar and long sleeves. Features side zip pockets, belt with buckle detail, front zip-up fastening and contrasting, textured fabric lining.</div>
-      <div class="product__color">
-        <form action="">
-          <fieldset>
-            <input type="radio" name="color">
-            <label for="straw">
-              <i class="ion-android-done"></i>
-            </label>
-          </fieldset>
-          <fieldset>
-            <input type="radio" name="color">
-            <label for="brown">
-              <i class="ion-android-done"></i>
-            </label>
-          </fieldset>
-        </form>
-      </div>
-      <a class="product__button" href="#" onClick="buttonAnimate()">
-        <span>Add to cart</span>
-        <span>Success</span>
-      </a>
-    </div>
-  </div>
-</div>
 
-<!-- Keep this here :) -->
+<div class="product-detail">
+  <h1 class="product__title">Chair</h1>
+    <div class="product__price">$79.99</div>
+    <div class="product__subtitle">Some cool information about the chair. We love this chair because. It is a chair. Chair chair chair. Sexy little chair. Hahaha chair.</div>
+
+<a class="product__button" href="#" onClick="buttonAnimate()">
+  <span>Add to cart</span>
+  <span>Success</span>
+</a>
+</div> </div> </div> </div> </div> </div>
+<!-- BENCH -->
+
+<div class="slide slide-1 ">
+<div class="slide__bg"></div>
+<div class="slide__content">
+<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+</svg>
+<div class="slide__text">
+
+<div class="product">
+    <div class="product-photo">
+      <img src="./images/productchair1.png">
+      <img src="./images/productbench1.png">
+    </div>
+
+<div class="product-detail">
+  <h1 class="product__title">Bench</h1>
+    <div class="product__price">$79.99</div>
+    <div class="product__subtitle">Some cool information about the chair. We love this chair because. It is a chair. Chair chair chair. Sexy little chair. Hahaha chair.</div>
+
+<a class="product__button" href="#" onClick="buttonAnimate()">
+  <span>Add to cart</span>
+  <span>Success</span>
+</a>
+</div> </div> </div> </div> </div>
+
+<!-- CHAIR -->
+
+<div class="slide slide-2 ">
+<div class="slide__bg"></div>
+<div class="slide__content">
+<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+</svg>
+<div class="slide__text">
+
+<div class="product">
+    <div class="product-photo">
+      <img src="./images/diningchair1.png">
+      <img src="./images/diningchair2.png">
+    </div>
+
+<div class="product-detail">
+  <h1 class="product__title">Chair</h1>
+    <div class="product__price">$79.99</div>
+    <div class="product__subtitle">Some cool information about the chair. We love this chair because. It is a chair. Chair chair chair. Sexy little chair. Hahaha chair.</div>
+
+<a class="product__button" href="#" onClick="buttonAnimate()">
+  <span>Add to cart</span>
+  <span>Success</span>
+</a>
+</div> </div> </div> </div> </div>
+
+<!-- DINING TABLE -->
+
+<div class="slide slide-3 ">
+<div class="slide__bg"></div>
+<div class="slide__content">
+<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+</svg>
+<div class="slide__text">
+
+<div class="product">
+    <div class="product-photo">
+      <img src="./images/diningtable2.png">
+      <img src="./images/diningtable1.png">
+    </div>
+
+<div class="product-detail">
+  <h1 class="product__title">Dining Table</h1>
+    <div class="product__price">$79.99</div>
+    <div class="product__subtitle">Some cool information about the chair. We love this chair because. It is a chair. Chair chair chair. Sexy little chair. Hahaha chair.</div>
+
+<a class="product__button" href="#" onClick="buttonAnimate()">
+  <span>Add to cart</span>
+  <span>Success</span>
+</a>
+</div> </div> </div> </div> </div>
+
+<!-- DINING CHAIR -->
+
+<div class="slide slide-4 ">
+<div class="slide__bg"></div>
+<div class="slide__content">
+<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+</svg>
+<div class="slide__text">
+
+<div class="product">
+    <div class="product-photo">
+      <img src="./images/tablechair1.png">
+      <img src="./images/tablechair2.png">
+    </div>
+
+<div class="product-detail">
+  <h1 class="product__title">Dining Chair</h1>
+    <div class="product__price">$79.99</div>
+    <div class="product__subtitle">Some cool information about the chair. We love this chair because. It is a chair. Chair chair chair. Sexy little chair. Hahaha chair.</div>
+
+<a class="product__button" href="#" onClick="buttonAnimate()">
+  <span>Add to cart</span>
+  <span>Success</span>
+</a>
+</div> </div> </div> </div> </div>
+
+<!-- COFFEE TABLE -->
+
+<div class="slide slide-5 ">
+<div class="slide__bg"></div>
+<div class="slide__content">
+<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+</svg>
+<div class="slide__text">
+
+<div class="product">
+    <div class="product-photo">
+      <img src="./images/productcoffee2.png">
+      <img src="./images/productcoffee1.png">
+    </div>
+
+<div class="product-detail">
+  <h1 class="product__title">Coffee Table</h1>
+    <div class="product__price">$79.99</div>
+    <div class="product__subtitle">Some cool information about the chair. We love this chair because. It is a chair. Chair chair chair. Sexy little chair. Hahaha chair.</div>
+
+<a class="product__button" href="#" onClick="buttonAnimate()">
+  <span>Add to cart</span>
+  <span>Success</span>
+</a>
+</div> </div> </div> </div> </div>
+
+
+
 
 <header class="header" data-menustate="closed">
 
 </header>
 
 <!-- partial -->
-  <script  src="./homescript.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./homescript.js"></script>
 
 </body>
 </html>
