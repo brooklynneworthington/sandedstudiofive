@@ -38,16 +38,13 @@ h1,
 .h1,
 .nav {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 3vw;
   margin-bottom: 0;
 }
 
-h2, h3, .nav {
-  font-family: 'PT Serif', serif;
-  font-weight: 700;
-}
+
 
 h2 {
   font-size: 2rem;
@@ -58,6 +55,12 @@ h2 {
 h4 {
   margin-bottom: 0;
   padding-bottom: 1.6rem;
+
+font-family: big-caslon-fb, serif;
+
+font-weight: 400;
+
+font-style: normal;
 }
 
 a {
@@ -139,7 +142,7 @@ svg {
 .nav,
 .nav-toggle {
   position: absolute;
-  color: white;
+  color: #382e2d;
 }
 
 .nav {
@@ -524,14 +527,10 @@ svg {
   animation-fill-mode: forwards;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Montserrat:300,400,700");
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Bitter", serif;
-  font-size: 16px;
+font-family: big-caslon-fb, serif;
+font-weight: 400;
+font-style: normal;
 }
 
 @-webkit-keyframes small {
@@ -676,6 +675,8 @@ body {
   text-align: center;
   padding: 0 5%;
 }
+
+
 .product__title {
   font-size: 1.8rem;
   margin-bottom: 2rem;
@@ -688,10 +689,9 @@ body {
 .product__subtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: .75rem;
+  font-size: 1rem;
   color: #382e2d;
   margin-bottom: 2rem;
-  padding: 0 4rem;
   text-align: left;
 }
 .product__color form {
@@ -919,11 +919,11 @@ body {
   background-size: cover;
 }
 .slide:nth-child(1) .slide__overlay-path {
-  fill: #a67052;
+  ;
 }
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
-    background-color: #a67052;
+  ;
   }
 }
 .slide:nth-child(2) {
@@ -968,7 +968,11 @@ body {
 }
 @media (max-width: 991px) {
   .slide:nth-child(4) .slide__text {
-    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+@media (max-width: 991px) {
+  .product__subtitle {
+    display: none;
   }
 }
 .slide__content {
